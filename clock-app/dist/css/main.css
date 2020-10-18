@@ -81,28 +81,38 @@ body .container .title p {
   font-size: .8rem;
   width: 37rem;
   height: 1rem;
-  overflow: auto;
+  overflow-y: auto;
+}
+
+body .container .title p::-webkit-scrollbar {
+  width: 0px;
 }
 
 body .container .timestamp-morning {
   border-radius: 32px;
   background: #fed766;
-  -webkit-box-shadow: 9px 9px 18px #ecc85f,  -9px -9px 18px #ffe66d;
-          box-shadow: 9px 9px 18px #ecc85f,  -9px -9px 18px #ffe66d;
+  -webkit-box-shadow: 9px 9px 18px #ecc85f, 
+ -9px -9px 18px #ffe66d;
+          box-shadow: 9px 9px 18px #ecc85f, 
+ -9px -9px 18px #ffe66d;
 }
 
 body .container .timestamp-afternoon {
   border-radius: 32px;
   background: #ffb8bf;
-  -webkit-box-shadow: 9px 9px 18px #edabb2,  -9px -9px 18px #ffc5cc;
-          box-shadow: 9px 9px 18px #edabb2,  -9px -9px 18px #ffc5cc;
+  -webkit-box-shadow: 9px 9px 18px #edabb2, 
+ -9px -9px 18px #ffc5cc;
+          box-shadow: 9px 9px 18px #edabb2, 
+ -9px -9px 18px #ffc5cc;
 }
 
 body .container .timestamp-night {
   border-radius: 32px;
   background: #55b9f3;
-  -webkit-box-shadow: 9px 9px 18px #4face2,  -9px -9px 18px #5bc6ff;
-          box-shadow: 9px 9px 18px #4face2,  -9px -9px 18px #5bc6ff;
+  -webkit-box-shadow: 9px 9px 18px #4face2, 
+ -9px -9px 18px #5bc6ff;
+          box-shadow: 9px 9px 18px #4face2, 
+ -9px -9px 18px #5bc6ff;
 }
 
 body .container .timestamp {
@@ -138,24 +148,30 @@ body .container .message-morning {
   padding: 20px;
   border-radius: 22px;
   background: #fed766;
-  -webkit-box-shadow: inset 9px 9px 18px #ecc85f,  inset -9px -9px 18px #ffe66d;
-          box-shadow: inset 9px 9px 18px #ecc85f,  inset -9px -9px 18px #ffe66d;
+  -webkit-box-shadow: inset 9px 9px 18px #ecc85f, 
+ inset -9px -9px 18px #ffe66d;
+          box-shadow: inset 9px 9px 18px #ecc85f, 
+ inset -9px -9px 18px #ffe66d;
 }
 
 body .container .message-afternoon {
   padding: 20px;
   border-radius: 22px;
   background: #ffb8bf;
-  -webkit-box-shadow: inset 9px 9px 18px #edabb2,  inset -9px -9px 18px #ffc5cc;
-          box-shadow: inset 9px 9px 18px #edabb2,  inset -9px -9px 18px #ffc5cc;
+  -webkit-box-shadow: inset 9px 9px 18px #edabb2, 
+ inset -9px -9px 18px #ffc5cc;
+          box-shadow: inset 9px 9px 18px #edabb2, 
+ inset -9px -9px 18px #ffc5cc;
 }
 
 body .container .message-night {
   padding: 20px;
   border-radius: 22px;
   background: #55b9f3;
-  -webkit-box-shadow: inset 9px 9px 18px #4face2,  inset -9px -9px 18px #5bc6ff;
-          box-shadow: inset 9px 9px 18px #4face2,  inset -9px -9px 18px #5bc6ff;
+  -webkit-box-shadow: inset 9px 9px 18px #4face2, 
+ inset -9px -9px 18px #5bc6ff;
+          box-shadow: inset 9px 9px 18px #4face2, 
+ inset -9px -9px 18px #5bc6ff;
 }
 
 body .container .message {
@@ -167,9 +183,26 @@ body .container .message {
 body .container .message .text {
   background-color: transparent;
   border: unset;
+  outline: unset;
   font-size: 1rem;
   color: #07073f;
   width: 20rem;
   text-align: center;
+}
+
+body .container .message .text::-webkit-input-placeholder {
+  color: rgba(7, 7, 63, 0.637);
+}
+
+body .container .message .text:-ms-input-placeholder {
+  color: rgba(7, 7, 63, 0.637);
+}
+
+body .container .message .text::-ms-input-placeholder {
+  color: rgba(7, 7, 63, 0.637);
+}
+
+body .container .message .text::placeholder {
+  color: rgba(7, 7, 63, 0.637);
 }
 /*# sourceMappingURL=main.css.map */
