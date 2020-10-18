@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './variable';
+@import './typograph';
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: $font-color;
+}
+
+
+.body-morning {
+  background-color: $bg-color-morning;
+}
+.body-afternoon {
+  background-color: $bg-color-afternoon;
+}
+.body-night {
+  background-color: $bg-color-night;
+}
+body {
+  // background-color: $bg-color-afternoon;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container {
+    // background-color: red;
+    width: 1270px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      margin-top: -10px;
+      text-align: center;
+      h1 {
+        // background-color: red;
+        width: 37rem;
+      }
+      p {
+        margin: 2px;
+        color: $font-disable;
+        font-size: .8rem;
+        // background-color: red;
+        width: 37rem;
+        height: 1rem;
+        overflow: auto;
+      }
+    }
+    .timestamp-morning {
+      @include neumorphFlatMorning(32px);
+    }
+    .timestamp-afternoon {
+      @include neumorphFlatAfternoon(32px);
+    }
+    .timestamp-night {
+      @include neumorphFlatNight(32px);
+    }
+    .timestamp {
+      // background-color: blueviolet;
+      text-align: center;
+      cursor: pointer;
+      margin: 4rem 0;
+      padding: 10px;
+      width: 42rem;
+      position: relative;
+      // @include neumorphFlatAfternoon(32px);
+      .fas {
+        font-size: 1.4rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+      }
+      .time {
+        font-size: 7rem;
+        letter-spacing: .2rem;
+        small {
+          font-size: 1rem;
+        }
+      }
+      .date {
+        font-size: 1.3rem;
+      }
+    }
+    .message-morning {
+      @include neumorphPressMorning(22px);
+    }
+    .message-afternoon {
+      @include neumorphPressAfternoon(22px);
+    }
+    .message-night {
+      @include neumorphPressNight(22px);
+    }
+    .message {
+      // @include neumorphPressAfternoon(22px);
+      max-width: 42rem;
+      overflow: auto;
+      text-align: center;
+      .text {
+        background-color: transparent;
+        border: unset;
+        font-size: 1rem;
+        color: $font-color;
+        width: 20rem;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #07073f;
+}
+
+.body-morning {
+  background-color: #fed766;
+}
+
+.body-afternoon {
+  background-color: #ffb8bf;
+}
+
+.body-night {
+  background-color: #55b9f3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .container {
+  width: 1270px;
+  height: 600px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .title {
+  margin-top: -10px;
+  text-align: center;
+}
+
+body .container .title h1 {
+  width: 37rem;
+}
+
+body .container .title p {
+  margin: 2px;
+  color: rgba(7, 7, 63, 0.637);
+  font-size: .8rem;
+  width: 37rem;
+  height: 1rem;
+  overflow: auto;
+}
+
+body .container .timestamp-morning {
+  border-radius: 32px;
+  background: #fed766;
+  -webkit-box-shadow: 9px 9px 18px #ecc85f,  -9px -9px 18px #ffe66d;
+          box-shadow: 9px 9px 18px #ecc85f,  -9px -9px 18px #ffe66d;
+}
+
+body .container .timestamp-afternoon {
+  border-radius: 32px;
+  background: #ffb8bf;
+  -webkit-box-shadow: 9px 9px 18px #edabb2,  -9px -9px 18px #ffc5cc;
+          box-shadow: 9px 9px 18px #edabb2,  -9px -9px 18px #ffc5cc;
+}
+
+body .container .timestamp-night {
+  border-radius: 32px;
+  background: #55b9f3;
+  -webkit-box-shadow: 9px 9px 18px #4face2,  -9px -9px 18px #5bc6ff;
+          box-shadow: 9px 9px 18px #4face2,  -9px -9px 18px #5bc6ff;
+}
+
+body .container .timestamp {
+  text-align: center;
+  cursor: pointer;
+  margin: 4rem 0;
+  padding: 10px;
+  width: 42rem;
+  position: relative;
+}
+
+body .container .timestamp .fas {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+body .container .timestamp .time {
+  font-size: 7rem;
+  letter-spacing: .2rem;
+}
+
+body .container .timestamp .time small {
+  font-size: 1rem;
+}
+
+body .container .timestamp .date {
+  font-size: 1.3rem;
+}
+
+body .container .message-morning {
+  padding: 20px;
+  border-radius: 22px;
+  background: #fed766;
+  -webkit-box-shadow: inset 9px 9px 18px #ecc85f,  inset -9px -9px 18px #ffe66d;
+          box-shadow: inset 9px 9px 18px #ecc85f,  inset -9px -9px 18px #ffe66d;
+}
+
+body .container .message-afternoon {
+  padding: 20px;
+  border-radius: 22px;
+  background: #ffb8bf;
+  -webkit-box-shadow: inset 9px 9px 18px #edabb2,  inset -9px -9px 18px #ffc5cc;
+          box-shadow: inset 9px 9px 18px #edabb2,  inset -9px -9px 18px #ffc5cc;
+}
+
+body .container .message-night {
+  padding: 20px;
+  border-radius: 22px;
+  background: #55b9f3;
+  -webkit-box-shadow: inset 9px 9px 18px #4face2,  inset -9px -9px 18px #5bc6ff;
+          box-shadow: inset 9px 9px 18px #4face2,  inset -9px -9px 18px #5bc6ff;
+}
+
+body .container .message {
+  max-width: 42rem;
+  overflow: auto;
+  text-align: center;
+}
+
+body .container .message .text {
+  background-color: transparent;
+  border: unset;
+  font-size: 1rem;
+  color: #07073f;
+  width: 20rem;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

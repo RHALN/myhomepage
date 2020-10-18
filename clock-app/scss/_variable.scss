@@ -1,0 +1,53 @@
+$font-color: rgb(7, 7, 63);
+$font-disable: rgba(7, 7, 63, 0.637);
+
+// NIGHT
+$bg-color-night: #55b9f3;
+@mixin neumorphFlatNight($radius) {
+  border-radius: $radius;
+  background: #55b9f3;
+  box-shadow:  9px 9px 18px #4face2, 
+               -9px -9px 18px #5bc6ff;
+}
+
+@mixin neumorphPressNight($radius) {
+  padding: 20px;
+  border-radius: $radius;
+  background: #55b9f3;
+  box-shadow: inset 9px 9px 18px #4face2, 
+              inset -9px -9px 18px #5bc6ff;
+}
+
+// MORNING
+$bg-color-morning: #fed766;
+@mixin neumorphFlatMorning($radius) {
+  border-radius: $radius;
+  background: #fed766;
+  box-shadow:  9px 9px 18px #ecc85f, 
+               -9px -9px 18px #ffe66d;
+}
+
+@mixin neumorphPressMorning($radius) {
+  padding: 20px;
+  border-radius: $radius;
+  background: #fed766;
+  box-shadow: inset 9px 9px 18px #ecc85f, 
+              inset -9px -9px 18px #ffe66d;
+}
+
+// AFTERNOON
+$bg-color-afternoon: #ffb8bf;
+@mixin neumorphFlatAfternoon($radius) {
+  border-radius: $radius;
+  background: #ffb8bf;
+  box-shadow: 9px 9px 18px #edabb2, 
+              -9px -9px 18px #ffc5cc;
+}
+
+@mixin neumorphPressAfternoon($radius) {
+  padding: 20px;
+  border-radius: $radius;
+  background: #ffb8bf;
+  box-shadow: inset 9px 9px 18px #edabb2, 
+              inset -9px -9px 18px #ffc5cc;
+}
