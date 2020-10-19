@@ -57,6 +57,10 @@ $(document).ready(function () {
     } else if (h > 12 && h < 17) {
       $('.say-hello').html('Good Afternoon');
       $('.view-message').html('Jika kamu merindukan seseorang, tataplah matahari sore. Kirimkan pesan rindumu untuknya lewat senja.');
+      $('.fa-moon').css("right", "25px");
+      $('.fa-moon').css("font-size", ".8rem");
+      $('.fa-sun').css("right", "45px");
+      $('.fa-sun').css("font-size", ".9rem");
       removeColorPalette('morning');
       addColorPalette('afternoon');
     } else {
